@@ -28,7 +28,14 @@ puts result
 numbers = [5,6,7,8]
 
 first_num = numbers.include?(7)
-puts first_num
+puts first_num # true
 sec_num = numbers.include?(3)
-puts sec_num
+puts sec_num # false
 
+friends = ['Sharon', 'Leo', 'Leila', 'Brian', 'Arun']
+
+invited_frds = friends.select { |frd| frd != 'Sharon' }
+
+show = invited_frds.include?('Sharon')
+
+puts show # false
