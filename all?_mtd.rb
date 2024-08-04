@@ -36,3 +36,5 @@ fruits2 = ['apple', 'banana', 'strawberry', 'pineapple']
 puts fruits2.all? { |fruit| fruit.length > 3 } # true
 
 puts fruits2.all? { |fruit| fruit.length > 6 } # false
+
+# Special note to keep in mind while debugging: #all? will return true by default unless the block returns false or nil. So if you call #all? on an empty array or hash (i.e., there are no elements for the block to evaluate), it will return true.
